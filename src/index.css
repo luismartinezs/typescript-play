@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900 font-sans;
+  }
+
+  h1 {
+    @apply text-3xl font-bold mb-4 text-blue-600;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mb-3 text-blue-500;
+  }
+
+  p {
+    @apply mb-2;
+  }
+
+  canvas {
+    @apply border border-gray-300 rounded shadow-md mb-4;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+  }
+
+  .vertex-info {
+    @apply bg-white p-4 rounded-lg shadow-md mb-4;
+  }
+
+  .vertex-position {
+    @apply text-sm text-gray-600;
+  }
+}
